@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AForge.Video;
+using AForge.Video.DirectShow;
+using ZXing;
 
 namespace Webcam_Scanner
 {
@@ -15,6 +18,11 @@ namespace Webcam_Scanner
         public formScanner()
         {
             InitializeComponent();
+        }
+
+        private void formScanner_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -92,6 +92,7 @@
             this.Controls.Add(this.picbxQR);
             this.Name = "formScanner";
             this.Text = "Webcam Scanner";
+            this.Load += new System.EventHandler(this.formScanner_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picbxQR)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
