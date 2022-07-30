@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Webcam_Scanner
 {
-    public partial class Form1 : Form
+    public partial class formScanner : Form
     {
-        public Form1()
+        public formScanner()
         {
             InitializeComponent();
         }
