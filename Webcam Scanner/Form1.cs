@@ -19,10 +19,14 @@ namespace Webcam_Scanner
         {
             InitializeComponent();
         }
-
+        FilterInfoCollection filterInfoCollection;
+        VideoCaptureDevice videoCaptureDevice;
         private void formScanner_Load(object sender, EventArgs e)
         {
-
+            filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            foreach (FilterInfo filterInfo in filterInfoCollection)
+                cmbxCamera.Items.Add(filterInfo.Name);
+            cmbxCamera.SelectedIndex = 0;
         }
     }
 }
