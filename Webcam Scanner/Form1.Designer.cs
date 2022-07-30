@@ -41,6 +41,7 @@
             this.picbxQR.Location = new System.Drawing.Point(81, 84);
             this.picbxQR.Name = "picbxQR";
             this.picbxQR.Size = new System.Drawing.Size(316, 283);
+            this.picbxQR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picbxQR.TabIndex = 1;
             this.picbxQR.TabStop = false;
             // 
@@ -69,6 +70,7 @@
             this.btnScan.TabIndex = 4;
             this.btnScan.Text = "Scan QR Code";
             this.btnScan.UseVisualStyleBackColor = true;
+            this.btnScan.Click += new System.EventHandler(this.btnScan_Click);
             // 
             // label1
             // 

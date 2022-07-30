@@ -20,13 +20,24 @@ namespace Webcam_Scanner
             InitializeComponent();
         }
         FilterInfoCollection filterInfoCollection;
-        VideoCaptureDevice videoCaptureDevice;
+        VideoCaptureDevice captureDevice;
         private void formScanner_Load(object sender, EventArgs e)
         {
             filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
             foreach (FilterInfo filterInfo in filterInfoCollection)
                 cmbxCamera.Items.Add(filterInfo.Name);
             cmbxCamera.SelectedIndex = 0;
+        }
+
+        private void btnScan_Click(object sender, EventArgs e)
+        {
+            captureDevice = new VideoCaptureDevice(filterInfoCollection[cmbxCamera.SelectedIndex].MonikerString);
+            captureDevice.NewFrame += CaptureDevice_NewFrame;
+            captureDevice.Start();
+        }
+        private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            picbxQR.Image = (Bitmap)eventArgs.Frame.Clone();
         }
     }
 }

@@ -1,0 +1,22 @@
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\bin\Debug\Webcam Scanner.exe.config
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\bin\Debug\Webcam Scanner.exe
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\bin\Debug\Webcam Scanner.pdb
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\bin\Debug\AForge.dll
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\bin\Debug\AForge.Video.dll
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\bin\Debug\zxing.dll
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\bin\Debug\zxing.presentation.dll
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\bin\Debug\AForge.xml
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\bin\Debug\AForge.Video.xml
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\bin\Debug\zxing.xml
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\bin\Debug\zxing.presentation.xml
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\obj\Debug\Webcam Scanner.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\obj\Debug\Webcam Scanner.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\obj\Debug\Webcam_Scanner.formScanner.resources
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\obj\Debug\Webcam_Scanner.Properties.Resources.resources
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\obj\Debug\Webcam Scanner.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\obj\Debug\Webcam Scanner.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\obj\Debug\Webcam Scanner.csproj.CopyComplete
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\obj\Debug\Webcam Scanner.exe
+C:\Users\DELL\Desktop\OOP Projects\Webcam Scanner\Webcam Scanner\obj\Debug\Webcam Scanner.pdb
