@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.picbxQR = new System.Windows.Forms.PictureBox();
             this.rchtxbxOutput = new System.Windows.Forms.RichTextBox();
             this.cmbxCamera = new System.Windows.Forms.ComboBox();
             this.btnScan = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.Timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picbxQR)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,6 +84,10 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Camera:";
             // 
+            // Timer
+            // 
+            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
             // formScanner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -94,6 +100,7 @@
             this.Controls.Add(this.picbxQR);
             this.Name = "formScanner";
             this.Text = "Webcam Scanner";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formScanner_FormClosing);
             this.Load += new System.EventHandler(this.formScanner_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picbxQR)).EndInit();
             this.ResumeLayout(false);
@@ -108,6 +115,7 @@
         private System.Windows.Forms.ComboBox cmbxCamera;
         private System.Windows.Forms.Button btnScan;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer Timer;
     }
 }
 

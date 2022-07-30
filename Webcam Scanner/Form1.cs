@@ -34,10 +34,33 @@ namespace Webcam_Scanner
             captureDevice = new VideoCaptureDevice(filterInfoCollection[cmbxCamera.SelectedIndex].MonikerString);
             captureDevice.NewFrame += CaptureDevice_NewFrame;
             captureDevice.Start();
+            Timer.Start();
         }
         private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
             picbxQR.Image = (Bitmap)eventArgs.Frame.Clone();
         }
+
+        private void formScanner_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (captureDevice.IsRunning)
+                captureDevice.Stop();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            if (picbxQR.Image != null)
+            {
+                BarcodeReader barcodeReader = new BarcodeReader();
+                Result result = barcodeReader.Decode((Bitmap)picbxQR.Image);
+                if (result != null)
+                {
+                    rchtxbxOutput.Text = result.ToString();
+                    Timer.Stop();
+                    if (captureDevice.IsRunning)
+                        captureDevice.Stop();
+                }
+            }
+        }   
     }
 }
